@@ -1,0 +1,123 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fff8893dd5d, pid=7230, tid=3331
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_40-b27) (build 1.8.0_40-b27)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.40-b25 mixed mode bsd-amd64 compressed oops)
+# Problematic frame:
+# C  [libobjc.A.dylib+0x6d5d]  objc_msgSend+0x1d
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x0000000000000018
+
+Registers:
+RAX=0x0000000000000000, RBX=0x00007fff8893dd40, RCX=0x0002330000023300, RDX=0x0000000000000000
+RSP=0x0000700000080b28, RBP=0x0000700000080b40, RSI=0x00007fff960a0a6d, RDI=0x00007ff918f262c0
+R8 =0x00007fff7c94f100, R9 =0x00000000001cb832, R10=0x00007fff960a0a6d, R11=0x0000000000000000
+R12=0x00007fff8893dd40, R13=0x0000000000000000, R14=0x00007fff8893dd40, R15=0x0000000000000000
+RIP=0x00007fff8893dd5d, EFLAGS=0x0000000000010246, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x0000700000080b28)
+0x0000700000080b28:   00007fff9d1351f5 00007fff8893dd40
+0x0000700000080b38:   00007ff918d37c20 0000700000080b60
+0x0000700000080b48:   00007fff8d632afa 00007ff91b2107f0
+0x0000700000080b58:   00007ff918d37c20 0000700000080b70
+0x0000700000080b68:   00007fff8d72fd51 0000700000080c70
+0x0000700000080b78:   00007fff8d72f802 00007fff8893dd40
+0x0000700000080b88:   00007fff8893dd40 0000000000000000
+0x0000700000080b98:   0000000000000000 0000000000000000
+0x0000700000080ba8:   0000000000000000 0000000000000000
+0x0000700000080bb8:   0000000000000000 0000000000000000
+0x0000700000080bc8:   0000000000000000 00007fff8dfdb2d7
+0x0000700000080bd8:   00007ff91b2107f0 0000000000000000
+0x0000700000080be8:   00007fff8893de11 0000000000000000
+0x0000700000080bf8:   0000000000000000 0000000000000000
+0x0000700000080c08:   0000000000000000 0000000000000000
+0x0000700000080c18:   0000000000000000 00007fff7ba076d0
+0x0000700000080c28:   0000000000000000 0000000000000000
+0x0000700000080c38:   00007fff7b8db490 7972617262694c2f
+0x0000700000080c48:   00007ff91b2107f0 00007fff8893dd40
+0x0000700000080c58:   00007fff8893dd40 0000000000000000
+0x0000700000080c68:   0000000000000000 0000700000080cb0
+0x0000700000080c78:   00007fff8d72f732 7972617200000000
+0x0000700000080c88:   614a2f6100000000 0000700000080d20
+0x0000700000080c98:   00000000000000f8 0000000000000000
+0x0000700000080ca8:   00000000000000e0 0000700000080cf0
+0x0000700000080cb8:   00007fff8d8a2fb0 0000000000000000
+0x0000700000080cc8:   00007ff91b2107f0 00000000000000f8
+0x0000700000080cd8:   00007fff8893dd40 0000000000000000
+0x0000700000080ce8:   00007fff788ba480 0000700000080d70
+0x0000700000080cf8:   00007fff8d8a2d7f 0000000000000000
+0x0000700000080d08:   0000000000000000 0000000000000000
+0x0000700000080d18:   0000000000000000 00007fff7a7900a0 
+
+Instructions: (pc=0x00007fff8893dd5d)
+0x00007fff8893dd3d:   44 00 00 48 85 ff 2e 74 62 40 f6 c7 01 2e 75 66
+0x00007fff8893dd4d:   49 bb f8 ff ff ff ff 7f 00 00 4c 23 1f 49 89 f2
+0x00007fff8893dd5d:   45 23 53 18 49 c1 e2 04 4d 03 53 10 49 3b 32 75
+0x00007fff8893dd6d:   04 41 ff 62 08 49 83 3a 01 76 0d 49 83 c2 10 49 
+
+Register to memory mapping:
+
+RAX=0x0000000000000000 is an unknown value
+RBX=0x00007fff8893dd40: objc_msgSend+0 in /usr/lib/libobjc.A.dylib at 0x00007fff88937000
+RCX=0x0002330000023300 is an unknown value
+RDX=0x0000000000000000 is an unknown value
+RSP=
+[error occurred during error reporting (printing register info), id 0xb]
+
+Stack: [0x0000700000001000,0x0000700000081000],  sp=0x0000700000080b28,  free space=510k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libobjc.A.dylib+0x6d5d]  objc_msgSend+0x1d
+C  [AppKit+0x8eafa]  _NSAutomaticWindowAnimationsLevel+0x1e
+C  [AppKit+0x18bd51]  _NSAutomaticWindowAnimationsEnabled+0x9
+C  [AppKit+0x18b802]  -[NSWindow _doOrderWindow:relativeTo:findKey:forCounter:force:isModal:]+0x72
+C  [AppKit+0x18b732]  -[NSWindow orderWindow:relativeTo:]+0x9f
+C  [AppKit+0x2fefb0]  __18-[NSWindow _close]_block_invoke+0x1eb
+C  [AppKit+0x2fed7f]  -[NSWindow _close]+0x176
+C  [FinderKit+0xa5b7b]
+[error occurred during error reporting (printing native stack), id 0xb]
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:at safepoint (shutting down)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007ff918e03570] Threads_lock - owner thread: 0x00007ff91a022000
+
+Heap:
+ PSYoungGen      total 38400K, used 13458K [0x0000000795580000, 0x0000000798000000, 0x00000007c0000000)
+  eden space 33280K, 40% used [0x0000000795580000,0x00000007962a4bd8,0x0000000797600000)
+  from space 5120K, 0% used [0x0000000797b00000,0x0000000797b00000,0x0000000798000000)
+  to   space 5120K, 0% used [0x0000000797600000,0x0000000797600000,0x0000000797b00000)
+ ParOldGen       total 87552K, used 0K [0x0000000740000000, 0x0000000745580000, 0x0000000795580000)
+  object space 87552K, 0% used [0x0000000740000000,0x0000000740000000,0x0000000745580000)
+ Metaspace       used 7084K, capacity 7254K, committed 7552K, reserved 1056768K
+  class space    used 779K, capacity 825K, committed 896K, reserved 1048576K
+
+Card table byte_map: [0x00000001153c0000,0x00000001157c1000] byte_map_base: 0x00000001119c0000
+
+Marking Bits: (ParMarkBitMap*) 0x00000001050f07a0
+ Begin Bits: [0x0000000115a6c000, 0x0000000117a6c000)
+ End Bits:   [0x0000000117a6c000, 0x0000000119a6c000)
+
+Polling page: 0x00000001057df000
+
+CodeCache: size=245760Kb used=2438Kb max_used=2447Kb free=243321Kb
+ bounds [0x0000000106000000, 0x0000000106270000, 0x0000000115000000]
+ total_blobs=913 nmethods=524 adapters=303
+ compilation: enabled
+
+Compilation events (10 events):
