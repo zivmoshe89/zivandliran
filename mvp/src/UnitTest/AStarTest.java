@@ -8,8 +8,8 @@ public class AStarTest {
 
 	@Test
 	public void test() {
-		System.out.println("ssss");
-		fail("Not yet implemented");
+		
+		
 	}
 
 }
