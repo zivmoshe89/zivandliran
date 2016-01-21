@@ -145,7 +145,6 @@ public class MyView extends Observable implements View {
 
 	@Override
 	public void resetMazeFromProperties(Properties pro) {
-		// TODO Auto-generated method stub
 		
 	}
 	
