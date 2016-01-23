@@ -13,7 +13,7 @@ public interface Model {
 
 	
 	/**
-	 * Dir m.
+	 * Dir m
 	 *
 	 * @param path the path
 	 */
