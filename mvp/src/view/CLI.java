@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 /**
  * defines the CLI .
  *
- * @author Liran Avishay
+ * @author Liran Avishay&Ziv Moshe
  */
 public class CLI {
 
