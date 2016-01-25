@@ -244,7 +244,7 @@ public class MazeWindow extends BasicWindow implements View {
 			
 			@Override
 			public void widgetDefaultSelected(SelectionEvent arg0) {
-				// TODO Auto-generated method stub
+			
 			}
 		});
 		
