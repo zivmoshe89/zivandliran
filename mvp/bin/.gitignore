@@ -1,7 +1,4 @@
-/.DS_Store
-/UnitTest/
+/view/
 /boot/
-/images/
 /model/
 /presenter/
-/view/
