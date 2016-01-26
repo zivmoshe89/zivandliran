@@ -10,6 +10,9 @@ public class AStarTest {
 	public void test() {
 		
 		
+	
+		
+		
 	}
 
 }
